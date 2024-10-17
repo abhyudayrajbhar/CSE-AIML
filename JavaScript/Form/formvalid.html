@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+    textarea{
+      width: 30%;
+      height: 80px;
+    }
+    </style>
+    
+</head>
+<body>
+
+    <h1>Enter Your Details Here</h1>
+
+    <form id="myForm" onsubmit="return validateForm()">
+        <label for="name">First Name </label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="age">Age </label>
+        <input type="number" placeholder="Type Number Only" id="age" age="age"><br><br>
+
+        <label for="DOB">Date Of Birth </label>
+        <input type="date"  id="DOB" DOB="DOB" ><br><br>
+
+        <label for="email">Email </label>
+        <input type="email" id="email" placeholder="@abes.ac.in" name="email">
+
+        <label for="password">Password </label>
+        <input type="password" id="password" name="password"><br><br>
+
+        <label for="list">Enter your TShirt Size </label><br>
+        
+          
+          <input type="radio" id="small" name="tshirt" value="small">
+          <label>Small size</label><br>
+       
+          <input type="radio" id="small" name="tshirt" value="large">
+          <label>Large</label><br>
+       
+        
+          <label for="list">Your Favourite Color </label>
+          <input type="color" value="ff0000"><br><br>
+
+          <label for="description">About Yourself</label><br>
+          <textarea id="description" name="description" placeholder="Tell us about yourself.." ></textarea><br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+
+    <script src="form.js"></script> 
+</body>
+</html>
