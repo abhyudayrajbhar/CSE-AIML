@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import MainLayout from './components/MainLayout'
 import Registration from './components/Registration'
@@ -12,9 +12,18 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<MainLayout />}>
-            <Route path="/login" element={<Login />}></Route>
+
+            <Route path="/login" element={<Login regDataLogin={store} />}></Route>
+
             <Route path="/registration" element={<Registration regData={setStore} />}></Route>
-            <Route path="/dash" element={<Dashboard />}></Route></Route>
+
+
+          </Route>
+
+        </Routes>
+
+        <Routes>
+          <Route path="/dash" element={<Dashboard />}></Route>
         </Routes>
       </BrowserRouter>
     </div>

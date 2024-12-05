@@ -9,7 +9,7 @@ function Registration({ regData }) {
     e.preventDefault();
     const data = {
       name, email, pwd
-    };
+    }
     regData(data);
   }
   return (
